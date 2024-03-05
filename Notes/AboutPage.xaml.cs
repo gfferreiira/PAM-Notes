@@ -7,8 +7,9 @@ public partial class AboutPage : ContentPage
 		InitializeComponent();
 	}
 
-    private void LearnMore_Clicked(object sender, EventArgs e)
+    private async void LearnMore_Clicked(object sender, EventArgs e)
     {
+		await	Launcher.Default.OpenAsync("https://aka.me/maui");
 
     }
 }
